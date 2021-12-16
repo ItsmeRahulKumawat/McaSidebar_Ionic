@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Feedback</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating" class="label" value=" ">Name</ion-label>
+    <ion-input [(ngModel)]="name"></ion-input>
+    </ion-item>
+    <ion-item>
+    <ion-label position="floating" class="label" value=" ">Email</ion-label>
+    <ion-input [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item style="margin-top: 15px;">
+    <ion-label position="stacked">Feedback</ion-label>
+    <ion-textarea placeholder="feedback" [(ngModel)]="feedback" value=" "></ion-textarea>
+    </ion-item>
+    <ion-item style="margin-bottom: 20px;">
+    <ion-label>Gender</ion-label>
+    <ion-select name="year" id="year" interface="popover">
+    <ion-select-option value="FY">Male</ion-select-option>
+    <ion-select-option value="SY">Female</ion-select-option>
+
+    </ion-select>
+    </ion-item>
+
+
+          <ion-label style="margin-left: 5%;"><b>Rate Us:</b></ion-label>
+          <div id="rate">
+            <ion-icon name="star" *ngFor="let num of [1,2,3,4,5]" (click)="rate(num)" [ngStyle]="{'color': getColor(num)}"></ion-icon>
+          </div>
+          <ion-label style="margin-left: 5%;">How was our App</ion-label><br>
+    <ion-checkbox mode:md></ion-checkbox> Excellent
+    <br/>
+    <ion-checkbox></ion-checkbox> Good
+    <br/>
+    <ion-checkbox></ion-checkbox> OK
+    <section>
+    <ion-button expand="block" class="button" (click)="feed($event)">Submit</ion-button>
+    </section>
+
+
+</ion-content>

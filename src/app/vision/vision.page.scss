@@ -1,0 +1,50 @@
+.logoImage {
+  display: flex;
+  height: 18%;
+  padding-top:15px ;
+}
+
+.visionMissionPara {
+
+  margin-left: 8px;
+  display: flex;
+  font-size: 18px;
+  word-spacing: 2px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.headerH3 {
+  margin-left: 8px;
+  display: flex;
+  color: #79B4B7;
+  font-size: 24px;
+  text-decoration: underline;
+  font-family: "Helvetica";
+}
+
+.quotePara {
+
+  margin-left: 16px;
+  display: flex;
+  word-spacing: 2px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+ion-content {
+  width: calc(100% + 15px);
+}
+
+.logoIcon {
+
+  padding-top: 10px;
+  width:75%;
+  display: flex;
+  margin-left: 35px;
+}
+
+.bannerImage {
+  padding-top: 7px;
+ padding-left: 5px;
+  display: flex;
+  width: 95%;
+}

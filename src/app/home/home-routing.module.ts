@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-  }
+  },
+  {
+    path: 'vision',
+    loadChildren: () => import('../vision/vision.module').then( m => m.VisionPageModule)
+  },
 ];
 
 @NgModule({

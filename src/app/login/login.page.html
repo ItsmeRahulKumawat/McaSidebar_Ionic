@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-title>login - S.P.I.T.</ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content>
+  <ion-card>
+  <ion-card-header>
+  <img src="../../assets/logo.jpg" alt="SPIT-logo" class="center">
+  <ion-card-title class="login">Login</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+  <ion-item>
+  <ion-input  placeholder="Username" [(ngModel)]="name">
+  </ion-input>
+</ion-item>
+<ion-item>
+  <ion-input placeholder="Password" type="password" [(ngModel)]="password">
+  </ion-input>
+  </ion-item>
+  <br>
+  <ion-button color="danger" class="center" href="/home">login</ion-button>
+  </ion-card-content>
+  </ion-card>
+  </ion-content>
